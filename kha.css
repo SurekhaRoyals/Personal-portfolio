@@ -359,8 +359,14 @@ nav li:first-child {
     border-radius: 5px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16), 0 10px 10px rgba(0, 0, 0, 0.7);
 }
-
+.progress-bar{
+    background: #959595;
+    width: 500px;
+    height: 10px;
+    border-radius: 5px;
+}
 .progress-bar div {
+    /* background:#959595; */
     height: 10px;
     border-radius: 5px;
     width: 10%;
@@ -556,9 +562,10 @@ nav li:first-child {
     stroke: #000;
     /* fill: transparent; */
     stroke-dasharray: 502;
-    stroke-dashoffset: 502;
+    stroke-dashoffset: 200;
     stroke-linecap: round;
     animation: animate-bar 1s linear forwards;
+    /* animation: stroke 13.5s steps(500) forwards; */
 }
 
 @keyframes animate-bar {
@@ -595,29 +602,29 @@ nav li:first-child {
 
 @keyframes animate-path1 {
 
-    to {
-        stroke-dashoffset: 150;
+    100% {
+        stroke-dashoffset: 100;
     }
 
 }
 
 @keyframes animate-path2 {
-    to {
-        stroke-dashoffset: 175;
+    100% {
+        stroke-dashoffset: 150;
     }
 
 }
 
 @keyframes animate-path3 {
-    to {
-        stroke-dashoffset: 125;
+    100% {
+        stroke-dashoffset: 90;
     }
 
 }
 
 @keyframes animate-path4 {
-    to {
-        stroke-dashoffset: 75;
+    100% {
+        stroke-dashoffset: 125;
     }
 
 }
@@ -654,7 +661,7 @@ nav li:first-child {
 
 }
 
-/* ==========================end of about sectio========================== */
+/* ==========================end of about section========================== */
 .text-center {
     text-align: center !important;
 }
@@ -916,6 +923,21 @@ nav li:first-child {
 
 
 
-@media screen and (max-width:600px){
-    
+.container-1 li a {
+line-height: 90px;
+height: 70px;
+width: 70px;
+text-align: center;
+}
+.container-1 li a i{
+    transition: all 0.3s linear;
+}
+.container-1 li a:hover i{
+    transform: scale(1.2);
+}
+.fa-linkedin{
+    color: #0186ce;
+}
+.fa-github{
+    color: #726f6f;
 }
